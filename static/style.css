@@ -1,0 +1,113 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Website Title */
+.container {
+  padding: 30px;
+  position: relative;
+  background: #8dc3f5;
+  background-size: 500% 500%;
+  animation: change-gradient 10s ease-in-out infinite;
+}
+@keyframes change-gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.container-heading {
+  margin: 0;
+  /* color: #f30b0b; */
+  font-family: "Pacifico", cursive;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.description p {
+  color: #f9f9f9;
+  font-style: italic;
+  font-size: 14px;
+  margin: 3px 0 0;
+}
+
+/* Text Area */
+.ml-container {
+  margin: 30px 0;
+  flex: 1 0 auto;
+}
+
+.message-box {
+  margin-bottom: 20px;
+  /* background: rgba(0, 0, 0, 0.3); */
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  color: #000;
+  /* text-shadow: 1px 1px 1px rgb(0 0 0 / 30%); */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgb(100 100 100 / 20%),
+    0 1px 1px rgb(255 255 255 / 20%);
+}
+
+/* Predict Button */
+.my-cta-button {
+  background: #0044e5;
+  /* border: 2px solid #000000; */
+  border: none;
+  border-radius: 1000px;
+  /* box-shadow: 3px 3px #8c8c8c; */
+  padding: 10px 36px;
+  color: #fff;
+  display: inline-block;
+  font: italic bold 20px/1 "Calibri", sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* .my-cta-button:hover {
+  color: #ff0000;
+  border: 2px solid #ff0000;
+} */
+
+/* .my-cta-button:active {
+  box-shadow: 0 0;
+} */
+
+/* Result */
+.results {
+  padding: 30px 0 0;
+  flex: 1 0 auto;
+}
+
+.danger {
+  color: #ff0000;
+}
+
+.safe {
+  color: green;
+}
+
+.gif {
+  width: 30%;
+}
